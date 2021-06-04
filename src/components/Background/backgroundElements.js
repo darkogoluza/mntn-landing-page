@@ -27,7 +27,7 @@ export const Sky = styled.div`
 export const Mounten = styled.div`
   width: 100%;
   height: 1400px;
-  top: 500px;
+  top: 425px;
   background-image: url("${(props) => props.src}");
   background-size: cover;
   background-position-y: top;
@@ -38,7 +38,7 @@ export const Mounten = styled.div`
 export const Hill = styled.div`
   width: 100%;
   height: 920px;
-  top: 600px;
+  top: 525px;
   background-image: url("${(props) => props.src}");
   background-size: cover;
   background-position-y: top;

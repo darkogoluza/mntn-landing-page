@@ -8,8 +8,8 @@ const Social = () => {
     <>
       <Container>
         <Text>Follow us</Text>
-        <Icon src={Twitter} />
-        <Icon src={Instagram} />
+        <Icon href="#" src={Twitter} />
+        <Icon href="#" src={Instagram} />
       </Container>
     </>
   );

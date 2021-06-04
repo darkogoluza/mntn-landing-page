@@ -4,7 +4,7 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 100px;
   padding: 0 ${(props) => props.theme.sidePadding};
 `;
 
@@ -21,9 +21,9 @@ export const HeroText = styled.h1`
   font-family: "Bentham", serif;
   font-size: 5rem;
   font-weight: 600;
-  font-size: 5.5rem;
-  line-height: 6.25rem;
-  width: 910px;
+  font-size: 4.5rem;
+  line-height: 5.25rem;
+  width: 750px;
 `;
 export const HeroTitleLine = styled.div`
   width: 72px;
