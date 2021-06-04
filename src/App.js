@@ -3,6 +3,7 @@ import GlobalStyles from "./globalStyles";
 import Header from "./components/Header";
 import Background from "./components/Background";
 import HeroContent from "./components/Hero";
+import MainContent from "./components/MainContent";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Background />
       <Header />
       <HeroContent />
+      <MainContent />
     </>
   );
 }

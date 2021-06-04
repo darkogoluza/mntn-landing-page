@@ -35,8 +35,11 @@ export const HeroTitleLine = styled.div`
 export const HeroTitleText = styled.p`
   color: ${(props) => props.theme.yellow};
   font-size: 1.375rem;
+  letter-spacing: 0.375rem;
+
   font-family: "Khula", sans-serif;
   font-weight: bold;
+  text-transform: uppercase;
 `;
 
 export const HeroTitleContainer = styled.div`

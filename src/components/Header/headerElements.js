@@ -6,7 +6,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 0 ${(props) => props.theme.sidePadding};
-  padding-top: 64px;
+  padding-top: ${(props) => props.theme.sidePadding};
 `;
 
 export const Logo = styled.h1`
