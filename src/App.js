@@ -1,11 +1,16 @@
 import React from "react";
 import GlobalStyles from "./globalStyles";
+import Header from "./components/Header";
+import Background from "./components/Background";
+import HeroContent from "./components/Hero";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <h1>hello world lol !</h1>;
+      <Background />
+      <Header />
+      <HeroContent />
     </>
   );
 }
