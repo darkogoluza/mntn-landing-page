@@ -5,7 +5,6 @@ export const MainWrapper = styled.section`
   flex-direction: ${(props) => props.flexDirection};
   align-items: center;
   padding: 0 10rem;
-  margin-top: 30rem;
 `;
 export const Wrapper = styled.div`
   & > * {
