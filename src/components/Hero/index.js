@@ -11,10 +11,13 @@ import {
   HeroContainer,
 } from "./HeroElements";
 import ArrowDown from "../../assets/arrow_down.png";
+import Social from "../Social";
+import Slider from "../Slider";
 
 const Hero = () => {
   return (
     <HeroContainer>
+      <Social />
       <HeroContent>
         <HeroTitleContainer>
           <HeroTitleLine />
@@ -26,6 +29,7 @@ const Hero = () => {
           <HeroScrollDownIcon src={ArrowDown} />
         </HeroScrollDownContent>
       </HeroContent>
+      <Slider />
     </HeroContainer>
   );
 };

@@ -2,17 +2,28 @@ import styled from "styled-components";
 
 export const HeroContainer = styled.div`
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 200px;
+  padding: 0 ${(props) => props.theme.sidePadding};
 `;
 
 export const HeroContent = styled.div`
-  width: 960px;
-  margin: auto;
+  & > * {
+    margin-bottom: 2rem;
+  }
+  & > *:last-child {
+    margin-bottom: 0;
+  }
 `;
 export const HeroText = styled.h1`
   color: ${(props) => props.theme.white};
   font-family: "Bentham", serif;
   font-size: 5rem;
+  font-weight: 600;
+  font-size: 5.5rem;
+  line-height: 6.25rem;
+  width: 910px;
 `;
 export const HeroTitleLine = styled.div`
   width: 72px;
@@ -25,6 +36,7 @@ export const HeroTitleText = styled.p`
   color: ${(props) => props.theme.yellow};
   font-size: 1.375rem;
   font-family: "Khula", sans-serif;
+  font-weight: bold;
 `;
 
 export const HeroTitleContainer = styled.div`
@@ -35,6 +47,7 @@ export const HeroTitleContainer = styled.div`
 export const HeroScrollDownText = styled.p`
   font-size: 1.375rem;
   font-family: "Khula", sans-serif;
+  font-weight: bold;
   color: ${(props) => props.theme.white};
   margin-right: 1rem;
 `;
