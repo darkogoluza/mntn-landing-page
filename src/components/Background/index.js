@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Gradient,
   BackgroundHolder,
@@ -14,13 +14,27 @@ import hillImage from "../../assets/bg_hill.png";
 import lowerGradient from "../../assets/bg_lower_gradient.png";
 
 const Background = () => {
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
   return (
     <>
       <BackgroundHolder>
         <Gradient src={gradientImage} />
         <Sky src={skyImage} />
-        <Mounten src={mountenImage} />
-        <Hill src={hillImage} />
+        <Mounten
+          style={{ transform: `translateY(-${offsetY * 0.1}px)` }}
+          src={mountenImage}
+        />
+        <Hill
+          style={{ transform: `translateY(-${offsetY * 0.2}px)` }}
+          src={hillImage}
+        />
         <LowerGradient src={lowerGradient} />
       </BackgroundHolder>
     </>

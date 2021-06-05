@@ -4,7 +4,7 @@ export const MainWrapper = styled.section`
   display: flex;
   flex-direction: ${(props) => props.flexDirection};
   align-items: center;
-  padding: 0 10rem;
+  padding: 0 ${(props) => props.theme.sidePadding};
 `;
 export const Wrapper = styled.div`
   & > * {
